@@ -22,23 +22,23 @@ Built with Streamlit and powered by [RugCheck API](https://rugcheck.xyz).
 ```bash
 git clone https://github.com/<yourusername>/rugscope.git
 cd rugscope
-
-2. Setup Virtual Environment
-
+```
+### 2. Setup Virtual Environment
+```bash
 python -m venv .venv
 source .venv/bin/activate        # On Windows: .venv\Scripts\activate
-
-3. Install Required Packages
-
+```
+### 3. Install Required Packages
+```bash
 pip install -r requirements.txt
-
-4. Setup Environment Variables
-
+```
+### 4. Setup Environment Variables
+```bash
 Copy the example file and insert your RugCheck JWT token:
 cp .env.example .env
 Inside .env:
 RUGCHECK_TOKEN=your_jwt_token_here
-
+```
 🔒 Note: Keep your JWT token private. Never share your .env file publicly.
 
 🔐 How to Get Your RugCheck JWT Token
