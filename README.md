@@ -23,7 +23,7 @@ Built with Streamlit and powered by [RugCheck API](https://rugcheck.xyz).
 git clone https://github.com/<yourusername>/rugscope.git
 cd rugscope
 
-### 2. Setup Virtual Environment
+2. Setup Virtual Environment
 
 python -m venv .venv
 source .venv/bin/activate        # On Windows: .venv\Scripts\activate
