@@ -3,7 +3,6 @@ from core.rugcheck_api import get_token_report
 
 def display_token_summary(report: dict):
     with st.expander("📊 Token Report (Readable Format)"):
-        # Anahtar–değerleri okunabilir şekilde göster
         for key, value in report.items():
             label = key.replace("_", " ").title()
             if isinstance(value, bool):
