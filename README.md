@@ -52,11 +52,11 @@ Obtain the JWT Token issued after signature
 
 Place it into your .env file under RUGCHECK_TOKEN
 
-🙌 Contributing
+## 🙌 Contributing
 We welcome community feedback, ideas, and code contributions!
 If you have a suggestion or want to collaborate, feel free to open an issue or pull request.
 
-📬 Contact
+## 📬 Contact
 Developed by Salih Toruner
 Contact via GitHub Issues or direct messages.
 
