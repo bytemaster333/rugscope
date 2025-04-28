@@ -13,11 +13,11 @@ HEADERS = {
 }
 
 # ─────────────────────────────────────
-# ✅ Gerçek API'den gelen veriler
+# ✅ Data from real API
 # ─────────────────────────────────────
 
 def get_token_report(mint_address):
-    """Gerçek RugCheck token raporu verisini alır."""
+    """Retrieves actual RugCheck token report data."""
     try:
         response = requests.get(f"{BASE_URL}/tokens/{mint_address}/report/summary", headers=HEADERS)
         if response.status_code == 200:
@@ -30,7 +30,7 @@ def get_token_report(mint_address):
         return None
 
 def get_insider_candidates(mint_address):
-    """Token için insider cüzdan grafiğini alır (varsa)."""
+    """Gets the insider wallet chart for the token (if available)."""
     try:
         response = requests.get(f"{BASE_URL}/tokens/{mint_address}/insiders/graph", headers=HEADERS)
         if response.status_code == 200:
@@ -43,11 +43,11 @@ def get_insider_candidates(mint_address):
         return None
 
 # ─────────────────────────────────────
-# 🚧 Gerçek API mevcut değil – Mock veri
+# 🚧 No real API available – Mock data
 # ─────────────────────────────────────
 
 def get_wallet_risk(address):
-    """Mock wallet risk verisi (API'de mevcut değil)."""
+    """Mock wallet risk data (not available in API)."""
     print("⚠️ Using mock data for wallet risk")
     return {
         "score": 68,
@@ -59,7 +59,7 @@ def get_wallet_risk(address):
     }
 
 def get_wallet_summary(address):
-    """Mock wallet summary verisi (API'de mevcut değil)."""
+    """Mock wallet summary data (not available in API)."""
     print("⚠️ Using mock data for wallet summary")
     return {
         "total_tx": 123,
