@@ -18,22 +18,21 @@ Built with Streamlit and powered by [RugCheck API](https://rugcheck.xyz).
 
 ## ⚙️ Installation Guide
 
-### 1. Clone the Repository
-
+1. Clone the Repository
 ```bash
 git clone https://github.com/<yourusername>/rugscope.git
 cd rugscope
 
-### 2. Setup Virtual Environment
+2. Setup Virtual Environment
 
 python -m venv .venv
 source .venv/bin/activate        # On Windows: .venv\Scripts\activate
 
-### 3. Install Required Packages
+3. Install Required Packages
 
 pip install -r requirements.txt
 
-### 4. Setup Environment Variables
+4. Setup Environment Variables
 
 Copy the example file and insert your RugCheck JWT token:
 cp .env.example .env
