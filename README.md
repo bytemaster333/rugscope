@@ -18,7 +18,7 @@ Built with Streamlit and powered by [RugCheck API](https://rugcheck.xyz).
 
 ## ⚙️ Installation Guide
 
-1. Clone the Repository
+### 1. Clone the Repository
 ```bash
 git clone https://github.com/<yourusername>/rugscope.git
 cd rugscope
