@@ -39,6 +39,12 @@ cp .env.example .env
 Inside .env:
 RUGCHECK_TOKEN=your_jwt_token_here
 ```
+
+### 5. Run RugScope
+```bash
+streamlit run main.py
+```
+
 🔒 Note: Keep your JWT token private. Never share your .env file publicly.
 
 🔐 How to Get Your RugCheck JWT Token
