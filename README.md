@@ -20,7 +20,7 @@ Built with Streamlit and powered by [RugCheck API](https://rugcheck.xyz).
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/<yourusername>/rugscope.git
+git clone https://github.com/bytemaster/rugscope
 cd rugscope
 ```
 ### 2. Setup Virtual Environment
