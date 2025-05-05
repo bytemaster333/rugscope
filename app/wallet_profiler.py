@@ -11,7 +11,6 @@ def render():
         risk_score = get_wallet_risk(wallet)
         summary = get_wallet_summary(wallet)
 
-        # Hata ayıklamak için ham çıktıyı gösterebilirsin (isteğe bağlı):
         # st.subheader("Debug API Response")
         # st.json(risk_score)
 
