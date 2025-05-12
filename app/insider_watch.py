@@ -12,7 +12,6 @@ def render():
         with st.spinner("Analyzing early transactions..."):
             insiders = get_insider_candidates(token_address)
 
-        # Swagger'dan gelen veri listede (list[dict])
         if insiders and isinstance(insiders, list) and len(insiders) > 0:
             network = insiders[0]
             nodes = network.get("nodes", [])
