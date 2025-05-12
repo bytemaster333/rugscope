@@ -9,7 +9,7 @@ def display_token_summary(report: dict):
                 icon = "✅ Yes" if value else "❌ No"
                 st.markdown(f"**{label}:** {icon}")
             elif isinstance(value, list):
-                continue  # risks kısmı ayrı işlenecek
+                continue 
             elif value is None or value == "":
                 st.markdown(f"**{label}:** `N/A`")
             else:
@@ -58,14 +58,11 @@ With RugScope, you can:
 
         if report:
             st.success("✅ Token report loaded.")
-
-            # Genel özet gösterimi
+            
             display_token_summary(report)
-
-            # Risk faktörleri ayrı gösterimi
+            
             display_risks(report)
 
-            # Ham JSON
             with st.expander("📦 Raw Token Report JSON"):
                 st.json(report)
 
